@@ -16,7 +16,7 @@ public class PlayerScript : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.D))
         {
             GetComponent<Rigidbody>().AddForce(-Vector3.right * force);
-            Debug.Log('D');
+            Debug.Log(GetComponent<Rigidbody>().velocity);
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
